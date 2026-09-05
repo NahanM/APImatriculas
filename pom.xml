@@ -8,11 +8,11 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>br.com.matriculas</groupId>
+	<artifactId>apimatriculas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>apimatriculas</name>
+	<description>API de Matriculas: alunos, turmas e matriculas</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -45,6 +45,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<!-- springdoc 3.x: a linha 2.x nao funciona no Boot 4 -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>3.1.0</version>
 		</dependency>
 
 		<dependency>

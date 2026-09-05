@@ -1,4 +1,4 @@
-package APImatricula;
+package br.com.matriculas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
