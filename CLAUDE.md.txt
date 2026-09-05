@@ -7,8 +7,16 @@
 - Se eu pedir algo que quebra uma regra abaixo, avise em vez de obedecer.
 
 ## Divisão de trabalho
-- Você escreve: entidades, repositories, DTOs, mappers, configuração, testes, README.
-- Eu escrevo: as classes de service e as regras de negócio. Deixe stub com TODO e nome de método.
+- Módulo `aluno` é seu, completo. Ele é o padrão de referência que eu vou copiar.
+- Módulos `turma` e `matricula` são meus, completos: entidade, repository, DTO,
+  mapper, service e controller. Você não escreve esses arquivos.
+- Fundação, tratamento de erro, OpenAPI e README são seus.
+- Testes são sempre seus, inclusive dos meus módulos, e vêm antes: você commita
+  o teste falhando e eu faço passar.
+- Nos meus módulos você só cria o arquivo vazio com a assinatura e um TODO
+  descrevendo a regra. Nada de corpo de método.
+- Quando eu commitar um módulo meu, revise contra o padrão do `aluno` e me
+  aponte as diferenças antes de seguir.
 
 ## Regras técnicas
 - Java 21, Maven, Spring Boot 4.x, JPA, H2 em memória.
