@@ -11,7 +11,9 @@
 - Eu escrevo: as classes de service e as regras de negócio. Deixe stub com TODO e nome de método.
 
 ## Regras técnicas
-- Java 21, Maven, Spring Boot 3.x, JPA, H2 em memória.
+- Java 21, Maven, Spring Boot 4.x, JPA, H2 em memória.
+- springdoc-openapi 3.x (a v2 não funciona no Boot 4).
 - Matrícula é entidade própria com @ManyToOne para Aluno e Turma. Não usar @ManyToMany.
 - Validação de entrada com Bean Validation nos DTOs, nunca nas entidades.
-- Erros retornam via @RestControllerAdvice, não exception vazando pro controller.
+- Erros retornam via @RestControllerAdvice.
+- Se você for sugerir algo que só existia no Spring Boot 3, avise antes que é padrão antigo.
